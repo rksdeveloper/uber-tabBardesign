@@ -9,7 +9,7 @@ export default function Index() {
     >
       <Text style={textStyles.text1}>Welcome to Trackza</Text>
       <Text style={textStyles1.text2}>Kharcha Likho Baki Trackza Smjhega</Text>
-      <Link>This is About Screen</Link>
+      <Link href="/about">This is About Screen</Link>
     </View>
   );
 }
