@@ -1,39 +1,22 @@
+import React from 'react'
+import {View,Text,StyleSheet} from 'react-native'
 
-import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
-
-export default function Index() {
+const index = () => {
   return (
-    <View
-      style={styles.container} 
-    >
-      <Text style={textStyles.text1}>Welcome to Trackza</Text>
-      <Text style={textStyles1.text2}>Kharcha Likho Baki Trackza Smjhega</Text>
+    <View style={styles.container}>
+      <Text>Welcome to Trackza</Text>
+      <Text>Tony Strak</Text>
     </View>
-  );
+  )
 }
 
+export default index
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor:'#fff',
-   gap:30
-    
+  container:{
+    flex:1,
+    alignItems:"center",
+    justifyContent:"center"
   }
 })
-const textStyles = StyleSheet.create({
-  text1:{
-    fontSize:30,
-    color:'black',
-    // backgroundColor:'#175b70'
-  }
-})
-const textStyles1 = StyleSheet.create({
-  text2:{
-    fontSize: 16,
-    color: 'grey',
-    // backgroundColor:'#FFF'
-  }
-})
+
